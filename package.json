@@ -1,5 +1,5 @@
 {
-  "name": "scrollspy.js",
+  "name": "@jfm/scrollspy",
   "version": "0.0.0",
   "description": "Scrollspy using IntersectionObserver",
   "main": "dist/index.js",

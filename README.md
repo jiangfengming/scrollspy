@@ -7,15 +7,15 @@ Zero dependencies scrollspy library using the [Intersection Observer API](https:
 ## Install
 
 ```
-npm install scrollspy.js
+npm install @jfm/scrollspy
 ```
 
 ## Usage
 
 ```js
-import scrollspy from 'scrollspy.js'
+import scrollspy from '@jfm/scrollspy'
 // or
-// import { observe, unobserve } from 'scrollspy.js'
+// import { observe, unobserve } from '@jfm/scrollspy'
 
 const el = document.getElementById('section')
 
