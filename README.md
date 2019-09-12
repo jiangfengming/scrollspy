@@ -1,4 +1,4 @@
-# scrollspy.js
+# scrollspy
 
 Zero dependencies scrollspy library using the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
 
