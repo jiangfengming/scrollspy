@@ -2,6 +2,10 @@
 
 Zero dependencies scrollspy library using the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
 
+## Demo
+
+https://jiangfengming.github.io/scrollspy/example.html
+
 ## Install
 
 ```
