@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollspy</title>
+
+    <style>
+    #log {
+      position: fixed;
+      right: 0;
+      top: 50px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section {
+      border: 1px solid blue;
+    }
+
+    .buttons {
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+    </style>
+  </head>
+
+  <body>
+    <section id="1">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <section id="a">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>a</h1>
+    </section>
+
+    <section id="b">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>b</h1>
+    </section>
+
+    <section id="2">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <section id="3">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <section id="4">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>4</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <section id="5" style="height: 3000px">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>5</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <section id="6">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>6</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <section id="7">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>7</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <section id="8">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>8</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <section id="9">
+      <button class="observe">observe</button>
+      <button class="unobserve">unobserve</button>
+      <h1>9</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula arcu. Quisque non convallis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in fermentum ipsum, at porttitor eros. Curabitur placerat id est non eleifend. Morbi at velit porttitor, consequat neque vel, finibus sem. In nec euismod nulla. Vivamus iaculis consequat imperdiet. Nunc tempor ac ex a convallis. Duis ex sem, venenatis et arcu quis, gravida cursus quam. Mauris ac egestas tellus, non sollicitudin lorem. Curabitur eu diam nulla. Cras dignissim tortor sit amet quam sagittis vehicula. Nulla augue ante, dictum ut enim id, ullamcorper lacinia nibh.</p>
+    </section>
+
+    <div id="log"></div>
+
+    <div class="buttons">
+      <button class="observe-all">observe all</button>
+      <button class="unobserve-all">unobserve all</button>
+    </div>
+
+    <script type="module">
+    import scrollspy from './src/index.js'
+
+    const log = document.getElementById('log')
+
+    function observeAll() {
+      document.querySelectorAll('section').forEach(el => observe(el))
+    }
+
+    function unobserveAll() {
+      document.querySelectorAll('section').forEach(el => unobserve(el))
+    }
+
+    function observe(el) {
+      scrollspy.observe(el, cb)
+    }
+
+    function unobserve(el) {
+      scrollspy.unobserve(el, cb)
+    }
+
+    function cb(el) {
+      log.textContent = el.id
+    }
+
+    observeAll()
+
+    document.querySelector('.observe-all').addEventListener('click', observeAll)
+    document.querySelector('.unobserve-all').addEventListener('click', unobserveAll)
+
+    document.querySelectorAll('.observe').forEach(el => {
+      el.addEventListener('click', observe.bind(el, el.parentNode))
+    })
+
+    document.querySelectorAll('.unobserve').forEach(el => {
+      el.addEventListener('click', unobserve.bind(el, el.parentNode))
+    })
+    </script>
+  </body>
+</html>

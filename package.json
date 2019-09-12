@@ -1,0 +1,51 @@
+{
+  "name": "scrollspy.js",
+  "version": "0.0.0",
+  "description": "Scrollspy using IntersectionObserver",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.esm.js",
+    "example": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangfengming/scrollspy.git"
+  },
+  "keywords": [
+    "scrollspy",
+    "IntersectionObserver"
+  ],
+  "author": "Jiang Fengming <jiangfengming87@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiangfengming/scrollspy/issues"
+  },
+  "homepage": "https://github.com/jiangfengming/scrollspy#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-config-enough": "^0.3.8",
+    "rollup": "^1.21.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "serve": "^11.1.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "loose": true,
+          "modules": false
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": "enough",
+    "env": {
+      "browser": true
+    }
+  }
+}
